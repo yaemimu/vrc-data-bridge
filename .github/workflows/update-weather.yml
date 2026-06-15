@@ -2,8 +2,12 @@ name: Update Weather Data
 
 on:
   schedule:
-    - cron: '*/20 * * * *'     # 20分ごと（15分や30分に変更可）
-  workflow_dispatch:           # 手動実行ボタン（テスト用）
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+
+# ここを追加（権限設定）
+permissions:
+  contents: write   # これが重要！
 
 jobs:
   update-weather:
@@ -12,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}   # これも追加
 
       - name: Fetch Current Weather (Tokyo)
         env:
