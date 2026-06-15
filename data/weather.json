@@ -1,1 +1,1 @@
-
+{"coord":{"lon":139.6917,"lat":35.6895},"weather":[{"id":804,"main":"Clouds","description":"厚い雲","icon":"04d"}],"base":"stations","main":{"temp":20.44,"feels_like":20.68,"temp_min":19.23,"temp_max":20.7,"pressure":1016,"humidity":82,"sea_level":1016,"grnd_level":1014},"visibility":10000,"wind":{"speed":6,"deg":32,"gust":7.28},"clouds":{"all":100},"dt":1781497202,"sys":{"type":2,"id":47744,"country":"JP","sunrise":1781465095,"sunset":1781517504},"timezone":32400,"id":1850144,"name":"東京都","cod":200}
